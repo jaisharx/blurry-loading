@@ -1,19 +1,21 @@
-h1 {
-    margin: 1.6rem;
-    font-size: 8rem;
-    text-align: center;
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: url('https://images.unsplash.com/photo-1611545815820-c1a58530d8d6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80')
+        no-repeat center center/cover;
 
-    /* gradient text  */
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(
-        45deg,
-        #f09433 0%,
-        #e6683c 25%,
-        #dc2743 50%,
-        #cc2366 75%,
-        #bc1888 100%
-    );
+    filter: blur(0px);
+}
+
+.loading-text {
+    font-size: 12rem;
+    color: #fff;
+
+    position: absolute;
+    right: 4rem;
+    top: 0;
 }
